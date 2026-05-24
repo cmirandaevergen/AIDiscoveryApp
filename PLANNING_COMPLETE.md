@@ -12,6 +12,7 @@
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-05-23 | Initial planning complete. All 10 artifacts produced. |
+| 1.1 | 2026-05-23 | Pre-Sprint 1 decisions resolved (see below). |
 
 ---
 
@@ -180,12 +181,14 @@
 
 ---
 
-## Part 7 — Pre-Sprint 1 Decisions Required
+## Part 7 — Pre-Sprint 1 Decisions (All Resolved)
 
-1. **Custom domain** — decide before Sprint 2 (invite links depend on it)
-2. **Supabase region** — `East US` or `West Europe`; decide before creating the project
-3. **Supabase project count** — recommend separate Dev and Prod projects from day 1
-4. **Presigned URL expiry strategy** — 72h vs 30d vs on-demand regeneration; decide before Sprint 8
+| Decision | Resolution |
+|---|---|
+| Custom domain | None — Azure Static Web Apps default URL will be used. Update if domain is acquired later. |
+| Supabase region | **East US** — applies to both Dev and Prod projects. |
+| Supabase project count | **Separate Dev and Prod projects** — two projects created from Sprint 1. |
+| Presigned URL expiry | **30 days** — update `AZURE_BLOB_SAS_EXPIRY_HOURS=720` in Function App Settings. |
 
 ---
 
